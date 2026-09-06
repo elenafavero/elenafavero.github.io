@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Elena Favero - Master's Student in Computer Engineering (Software track) at Politecnico di Torino & Chalmers University of Technology.">
+  <meta name="author" content="Elena Favero">
+  <meta name="keywords" content="Elena Favero, Computer Engineering, Politecnico di Torino, Chalmers University, AI Agents, JMH, Software Development, Distributed Systems, Data Science, IEEE-HKN">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Elena Favero | Computer Engineering Portfolio">
+  <meta property="og:description" content="Academic and professional portfolio: education (PoliTo & Chalmers), experiences (ISI Foundation, IEEE-HKN, Teaching Assistant), and projects (AI Agents, Distributed Architectures, Full-Stack Web App).">
+
+  <title>Elena Favero | Computer Engineering Portfolio</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       1. HEADER & NAVBAR
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Elena Favero - Home">
+        <div class="brand-text">
+          <span class="brand-name">Elena Favero</span>
+          <span class="brand-status">
+            <span class="status-dot"></span> Open to Work
+          </span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#hero" class="nav-link active">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#experience" class="nav-link">Relevant Experiences</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Buttons (Theme Toggle & CV Download) -->
+      <div class="nav-actions">
+        <!-- Dark/Light Mode Switcher -->
+        <button type="button" class="theme-toggle-btn" id="themeToggleBtn" aria-label="Switch to dark mode">
+          <!-- Moon Icon (Visible in Light Mode) -->
+          <svg id="themeMoonIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- Sun Icon (Visible in Dark Mode) -->
+          <svg id="themeSunIcon" style="display: none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <!-- CV Download Header Button -->
+        <a href="assets/documents/Elena_Favero_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn-header-cv" id="headerCvBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Resume / CV</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       2. HERO SECTION / ABOUT
+       ======================================================================== -->
+  <main>
+    <section class="section hero-section" id="hero">
+      <div class="hero-background-shapes" aria-hidden="true">
+        <div class="hero-blob hero-blob-1"></div>
+        <div class="hero-blob hero-blob-2"></div>
+      </div>
+
+      <div class="container hero-grid">
+        <!-- Hero Left Content -->
+        <div class="hero-content">
+          <h1 class="hero-title">
+            I'm <span class="gradient-text">Elena Favero</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Master's Student @ Politecnico di Torino
+          </p>
+
+          <!-- Bio Description Requested by User -->
+          <p class="hero-description">
+            I am a Master's student in <strong>Computer Engineering (Software track)</strong> at <em>Politecnico di Torino</em>, having recently completed an exchange program at <em>Chalmers University of Technology</em> in Sweden, and member of the <strong>IEEE-HKN Honor Society</strong>. I am passionate about <strong>software development</strong> and <strong>Artificial Intelligence</strong>.
+          </p>
+
+          <!-- Areas of Specialization Requested by User -->
+          <div class="hero-specialization">
+            <span class="hero-specialization-label">Areas of Specialization</span>
+            <div class="tag-cloud">
+              <span class="tag accent">Software Development</span>
+              <span class="tag accent">AI Agents</span>
+              <span class="tag accent">LLMs</span>
+              <span class="tag">Databases</span>
+              <span class="tag">Python</span>
+              <span class="tag">C</span>
+              <span class="tag">Java</span>
+              <span class="tag">SQL</span>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="hero-actions" style="margin-bottom: 0;">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore Projects</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <a href="#contact" class="btn btn-secondary">
+              <span>Get in Touch</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Right: Photo Card (Replacing the old metrics card) -->
+        <div class="hero-photo-card">
+          <div class="hero-photo-wrapper">
+            <img src="assets/images/elena-favero.png" alt="Elena Favero" class="hero-photo-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         3. EDUCATION (Clean Header as Requested)
+         ======================================================================== -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-header" style="margin-bottom: 2.75rem;">
+          <h2 class="section-title">Education</h2>
+        </div>
+
+        <div class="education-timeline">
+          <!-- 1. Master of Science PoliTo -->
+          <div class="timeline-item">
+            <div class="timeline-node">
+              <div class="timeline-node-inner"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div class="timeline-institution">
+                  Politecnico di Torino
+                  <span class="country">Turin, IT</span>
+                </div>
+                <div class="timeline-period">Sept 2024 – Oct 2026</div>
+              </div>
+              <div class="timeline-degree">
+                Master of Science in Computer Engineering - Software track
+              </div>
+              <div class="timeline-grade-badge">
+                ★ Expected final grade: 110 / 110
+              </div>
+              <p class="timeline-desc">
+                Advanced graduate curriculum with an in-depth focus on software development and modern software engineering practices.
+              </p>
+            </div>
+          </div>
+
+          <!-- 2. Erasmus & Thesis Chalmers University -->
+          <div class="timeline-item">
+            <div class="timeline-node">
+              <div class="timeline-node-inner"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div class="timeline-institution">
+                  Chalmers University of Technology
+                  <span class="country">Gothenburg, Sweden (SE)</span>
+                </div>
+                <div class="timeline-period">Sept 2025 – June 2026</div>
+              </div>
+              <div class="timeline-degree">
+                Erasmus+ Exchange Program & Master's Thesis
+              </div>
+              <div class="timeline-highlight">
+                <strong>Master's Thesis:</strong><br>
+                <em>"An AI Agent System to Generate JMH Microbenchmarks"</em>
+              </div>
+              <p class="timeline-desc">
+                Development of a multi-agent system capable of automatically generating JMH microbenchmarks—performance tests for Java code. The system verifies that generated tests are compilable, executable, and adhere to JMH best practices, followed by a thorough empirical evaluation of the system.
+              </p>
+              <div style="margin-top: 1.15rem;">
+                <a href="assets/documents/Elena_Favero_Master_Thesis.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.85rem;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <polyline points="10 9 9 9 8 9"></polyline>
+                  </svg>
+                  <span>Read Master's Thesis (PDF)</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Bachelor of Science PoliTo -->
+          <div class="timeline-item">
+            <div class="timeline-node">
+              <div class="timeline-node-inner"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div class="timeline-institution">
+                  Politecnico di Torino
+                  <span class="country">Turin, IT</span>
+                </div>
+                <div class="timeline-period">Sept 2021 – Sept 2024</div>
+              </div>
+              <div class="timeline-degree">
+                Bachelor of Science in Computer Engineering
+              </div>
+              <div class="timeline-grade-badge">
+                ★ Final grade: 104 / 110
+              </div>
+              <p class="timeline-desc">
+                Rigorous fundamentals in computer science, object-oriented programming, data structures, operating systems, database technology, computer networks and computer architectures.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Relevant Coursework Grid -->
+        <div class="coursework-box">
+          <h3 class="coursework-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-primary);">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            </svg>
+            <span>Relevant Coursework</span>
+          </h3>
+          <div class="coursework-grid">
+            <span class="course-badge">Algorithms and Data Structures</span>
+            <span class="course-badge">Software Engineering</span>
+            <span class="course-badge">Web Applications</span>
+            <span class="course-badge">Data Science and Database Technology</span>
+            <span class="course-badge">Big Data</span>
+            <span class="course-badge">Object-Oriented Programming</span>
+            <span class="course-badge">Distributed Systems</span>
+            <span class="course-badge">High-Performance Parallel Programming</span>
+            <span class="course-badge">Computer Architectures (ARM, MIPS)</span>
+            <span class="course-badge">Operating Systems</span>
+            <span class="course-badge">Computer Networks</span>
+            <span class="course-badge">Cryptography</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         4. RELEVANT EXPERIENCES (Clean Header as Requested)
+         ======================================================================== -->
+    <section class="section" id="experience" style="background-color: var(--bg-subtle);">
+      <div class="container">
+        <div class="section-header" style="margin-bottom: 2.75rem;">
+          <h2 class="section-title">Relevant Experiences</h2>
+        </div>
+
+        <div class="experience-grid">
+          <!-- 1. ISI Foundation -->
+          <article class="experience-card">
+            <div class="experience-type">Internship · Data Science</div>
+            <h3 class="experience-role">Conflict Analysis: An Explorational Study</h3>
+            <div class="experience-org">ISI Foundation · Turin, IT</div>
+            <div class="experience-date">April 2024 – June 2024</div>
+            <ul class="experience-bullets">
+              <li><strong>International conflict analysis:</strong> conducted a study on conflicts in South America, focusing on Brazil, using ACLED data to calculate key metrics such as conflict density and conflict exposure, identifying correlations with socio-economic and urbanization variables.</li>
+              <li><strong>Data analysis:</strong> applied data science techniques with tools such as Python, Pandas, Geopandas, and Matplotlib for geospatial analysis, data visualization, and large-scale dataset management, ensuring result validation and accuracy.</li>
+            </ul>
+            <div class="experience-skills">
+              <span class="tag accent">Python</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Geopandas</span>
+              <span class="tag">Matplotlib</span>
+              <span class="tag">Geospatial Analysis</span>
+            </div>
+          </article>
+
+          <!-- 2. IEEE-HKN Honor Society -->
+          <article class="experience-card">
+            <div class="experience-type">Student Association & Leadership</div>
+            <h3 class="experience-role">Head of Corporate Training Area & Member of Tutoring Area</h3>
+            <div class="experience-org">Mu Nu Chapter of IEEE-HKN Honor Society · Turin, IT</div>
+            <div class="experience-date">March 2023 – July 2025</div>
+            <ul class="experience-bullets">
+              <li><strong>Head of Corporate Training area:</strong> Oversee a team of 10-15 people in organizing events and masterclasses tailored for the Politecnico di Torino student community.</li>
+              <li>Organize networking events to connect members with experts and entrepreneurs, sharing career stories and professional experiences.</li>
+              <li><strong>Member of Tutoring area:</strong> Delivered C programming tutoring sessions at Politecnico di Torino.</li>
+            </ul>
+            <div class="experience-skills">
+              <span class="tag accent">Team Leadership</span>
+              <span class="tag">Public Speaking</span>
+              <span class="tag">C Tutoring</span>
+              <span class="tag">Event Management</span>
+            </div>
+          </article>
+
+          <!-- 3. Teaching Assistant @ PoliTo -->
+          <article class="experience-card">
+            <div class="experience-type">Academic Teaching Collaboration</div>
+            <h3 class="experience-role">Teaching Assistant in C Programming Fundamentals</h3>
+            <div class="experience-org">Politecnico di Torino · Turin, IT</div>
+            <div class="experience-date">February 2025 – July 2025</div>
+            <ul class="experience-bullets">
+              <li>Collaboration assisting first-year Bachelor’s students with C programming fundamentals.</li>
+              <li>Guided hands-on laboratory sessions focusing on imperative programming, memory management, pointer manipulation and algorithmic debugging.</li>
+              <li>Provided targeted mentorship to develop rigorous problem-solving habits among undergraduate students.</li>
+            </ul>
+            <div class="experience-skills">
+              <span class="tag accent">C Programming</span>
+              <span class="tag">Algorithms</span>
+              <span class="tag">Mentoring</span>
+              <span class="tag">Problem Solving</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         5. PROJECTS (Clean Header as Requested)
+         ======================================================================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header" style="margin-bottom: 2.75rem;">
+          <h2 class="section-title">Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Thesis AI Agents JMH -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <span class="project-category-badge">Master's Thesis Project</span>
+              <h3 class="project-card-title">An AI Agent System to Generate JMH Microbenchmarks</h3>
+            </div>
+            <div class="project-card-body">
+              <p class="project-summary">
+                Autonomous AI agent architecture designed to synthesize, validate, and execute accurate Java microbenchmarks using JMH, mitigating pitfalls like JIT dead code elimination and JVM warmup non-determinism.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tag accent">AI Agents</span>
+                <span class="tag">Java</span>
+                <span class="tag">JMH</span>
+                <span class="tag">JVM Internals</span>
+                <span class="tag">LLM Tooling</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <button type="button" class="btn-project-details" data-project-id="thesis-ai-agent">
+                <span>Project Details</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 2: ISI Foundation Conflict Analysis -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <span class="project-category-badge">Research Internship · Data Science</span>
+              <h3 class="project-card-title">Conflict Analysis: An Explorational Study</h3>
+            </div>
+            <div class="project-card-body">
+              <p class="project-summary">
+                Geospatial data science study conducted at ISI Foundation analyzing international conflict dynamics in South America, focusing on Brazil. Leveraged ACLED datasets, Python, Geopandas, and Matplotlib to model conflict density, calculate population exposure, and identify correlations with socio-economic and urbanization factors.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tag accent">Python</span>
+                <span class="tag">Pandas</span>
+                <span class="tag">Geopandas</span>
+                <span class="tag">Matplotlib</span>
+                <span class="tag">Geospatial Analysis</span>
+                <span class="tag">ACLED Data</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <button type="button" class="btn-project-details" data-project-id="isi-conflict-analysis">
+                <span>Project Details</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 3: Stuff Happens Web Application -->
+          <article class="project-card">
+            <div class="project-card-thumb">
+              <img src="assets/images/stuff-happens-game.png" alt="Stuff Happens Board Game Interface" loading="lazy">
+            </div>
+            <div class="project-card-header">
+              <span class="project-category-badge">Full-Stack Web App</span>
+              <h3 class="project-card-title">"Stuff Happens" Web Application</h3>
+            </div>
+            <div class="project-card-body">
+              <p class="project-summary">
+                A full-stack single-player web adaptation of the board game "Stuff Happens", developed with React and Node.js/Express. Features interactive gameplay against the computer, user authentication, and match history tracking.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tag accent">React 19</span>
+                <span class="tag accent">Node.js / Express</span>
+                <span class="tag">SQLite</span>
+                <span class="tag">Passport.js</span>
+                <span class="tag">REST API</span>
+                <span class="tag">JavaScript</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <button type="button" class="btn-project-details" data-project-id="webapp-stuff-happens">
+                <span>Project Details</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 4: Pac-Man for LandTiger Board -->
+          <article class="project-card">
+            <div class="project-card-thumb">
+              <img src="assets/images/pacman-landtiger.svg" alt="Pac-Man on LandTiger Board Arcade Maze" loading="lazy">
+              <span class="project-card-thumb-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                  <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                </svg>
+                Gameplay Video
+              </span>
+            </div>
+            <div class="project-card-header">
+              <span class="project-category-badge">Embedded Systems · ARM Cortex-M3</span>
+              <h3 class="project-card-title">Pac-Man on LandTiger Board</h3>
+            </div>
+            <div class="project-card-body">
+              <p class="project-summary">
+                A bare-metal C implementation of the classic Pac-Man arcade game developed for the LandTiger LPC1768 board (ARM Cortex-M3). Features real-time LCD rendering, joystick controls, autonomous ghost AI, and live game telemetry over the CAN bus.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tag accent">C Programming</span>
+                <span class="tag accent">ARM Cortex-M3</span>
+                <span class="tag">LandTiger (LPC1768)</span>
+                <span class="tag">CAN Bus</span>
+                <span class="tag">Hardware Interrupts</span>
+                <span class="tag">Embedded Systems</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <button type="button" class="btn-project-details" data-project-id="pacman-landtiger">
+                <span>Project Details</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         6. TECHNICAL & SOFT SKILLS
+         ======================================================================== -->
+    <section class="section" id="skills" style="background-color: var(--bg-subtle);">
+      <div class="container">
+        <div class="section-header" style="margin-bottom: 2.75rem;">
+          <h2 class="section-title">Technical & Soft Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+          <!-- 1. Programming Languages -->
+          <div class="skills-category-card">
+            <div class="skills-category-header">
+              <div class="skills-category-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="skills-category-title">Programming Languages</h3>
+            </div>
+            <div class="skill-items-container">
+              <div class="skill-pill"><strong>Python</strong></div>
+              <div class="skill-pill"><strong>C</strong></div>
+              <div class="skill-pill"><strong>Java</strong></div>
+              <div class="skill-pill"><strong>JavaScript</strong></div>
+              <div class="skill-pill"><strong>Assembly (MIPS, ARM)</strong></div>
+              <div class="skill-pill"><strong>SQL & Extended SQL</strong></div>
+              <div class="skill-pill"><strong>Bash</strong></div>
+              <div class="skill-pill"><strong>Go</strong></div>
+            </div>
+          </div>
+
+          <!-- 2. Languages -->
+          <div class="skills-category-card">
+            <div class="skills-category-header">
+              <div class="skills-category-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <h3 class="skills-category-title">Languages</h3>
+            </div>
+            <div class="soft-skills-list">
+              <div class="soft-skill-item">
+                <div class="soft-skill-title">🇮🇹 Italian: Native</div>
+                <div class="soft-skill-desc">Native speaker with articulate oral and written communication skills in academic and professional contexts.</div>
+              </div>
+              <div class="soft-skill-item">
+                <div class="soft-skill-title">🇬🇧 English: Fluent (C1 Level)</div>
+                <div class="soft-skill-desc"><strong>IELTS 2023 certified score: 7.5</strong>. Academic curriculum, international exchange, and thesis research conducted entirely in English.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Soft Skills & Leadership -->
+          <div class="skills-category-card">
+            <div class="skills-category-header">
+              <div class="skills-category-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <h3 class="skills-category-title">Soft Skills & Leadership</h3>
+            </div>
+            <div class="soft-skills-list">
+              <div class="soft-skill-item">
+                <div class="soft-skill-title">Leadership</div>
+                <div class="soft-skill-desc">Led a team of 10-15 people, delegating tasks, motivating members, and ensuring smooth project execution.</div>
+              </div>
+              <div class="soft-skill-item">
+                <div class="soft-skill-title">Communication</div>
+                <div class="soft-skill-desc">Managed internal and external communications, built professional relationships, and presented at public events.</div>
+              </div>
+              <div class="soft-skill-item">
+                <div class="soft-skill-title">Organization & Problem-Solving</div>
+                <div class="soft-skill-desc">Adapted plans to address unexpected issues, prioritized tasks effectively, and organized events, handling logistics, registrations, and guest coordination.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         7. CONTACT SECTION
+         ======================================================================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header" style="margin-bottom: 2.5rem; text-align: center;">
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-subtitle" style="max-width: 620px; margin: 0 auto;">
+            If you have opportunities or job offers to propose, feel free to reach out!
+          </p>
+        </div>
+
+        <div class="contact-cards-grid">
+          <!-- Email Card -->
+          <a href="mailto:faveroelena2@gmail.com" class="contact-card">
+            <div class="contact-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div class="contact-card-info">
+              <h4>Email</h4>
+              <span class="contact-card-link">faveroelena2@gmail.com</span>
+            </div>
+          </a>
+
+          <!-- LinkedIn Card -->
+          <a href="https://linkedin.com/in/elena-favero" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </div>
+            <div class="contact-card-info">
+              <h4>LinkedIn</h4>
+              <span class="contact-card-link">linkedin.com/in/elena-favero</span>
+            </div>
+          </a>
+
+          <!-- Location Card -->
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div class="contact-card-info">
+              <h4>Location</h4>
+              <span class="contact-card-link">Turin & Brescia, Italy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       8. PROJECT DETAILS MODAL
+       ======================================================================== -->
+  <div class="modal-backdrop" id="projectModalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-window">
+      <div class="modal-header">
+        <div class="modal-title-box">
+          <span class="project-category-badge" id="modalCategory">Category</span>
+          <h3 id="modalTitle">Project Title</h3>
+          <p id="modalContext" style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500;"></p>
+        </div>
+        <button type="button" class="modal-close-btn" id="projectModalCloseBtn" aria-label="Close project details">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-section">
+          <div class="modal-section-title">Project Overview</div>
+          <p id="modalOverview" style="color: var(--text-secondary); line-height: 1.65;"></p>
+        </div>
+
+        <div class="modal-section">
+          <div class="modal-section-title">The Engineering Challenge</div>
+          <div class="modal-highlight-box" id="modalChallenge" style="color: var(--text-secondary);"></div>
+        </div>
+
+        <div class="modal-section">
+          <div class="modal-section-title">Architecture & Technical Solution</div>
+          <div id="modalArchitecture" style="color: var(--text-secondary); line-height: 1.65;"></div>
+        </div>
+
+        <div class="modal-section">
+          <div class="modal-section-title">Technologies Used</div>
+          <div class="modal-tech-list" id="modalTechStack"></div>
+        </div>
+
+        <div class="modal-section" id="modalResultsSection">
+          <div class="modal-section-title">Results & Impact</div>
+          <p id="modalResults" style="color: var(--text-secondary); line-height: 1.65;"></p>
+        </div>
+
+        <div class="modal-section" id="modalGallerySection" style="display: none;">
+          <div class="modal-section-title">Application Screenshots</div>
+          <div class="modal-gallery" id="modalGallery"></div>
+        </div>
+
+        <div class="modal-section" id="modalVideoSection" style="display: none;">
+          <div class="modal-section-title">Gameplay Video</div>
+          <div id="modalVideoContainer"></div>
+        </div>
+
+        <div id="modalDocumentContainer" style="margin-top: 1.5rem; display: none;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       9. FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <p>© <span id="copyrightYear"></span> <strong>Elena Favero</strong> · Computer Engineering Portfolio</p>
+        <p style="font-size: 0.82rem; margin-top: 0.25rem;">Politecnico di Torino & Chalmers University of Technology</p>
+      </div>
+
+      <div class="footer-social-links">
+        <a href="https://linkedin.com/in/elena-favero" target="_blank" rel="noopener noreferrer" class="footer-social-link">LinkedIn</a>
+        <a href="mailto:faveroelena2@gmail.com" class="footer-social-link">Email</a>
+        <a href="#hero" class="back-to-top-btn" aria-label="Back to top">
+          <span>Back to top</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
